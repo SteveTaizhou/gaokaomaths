@@ -98,6 +98,7 @@
 \contentsline {subsubsection}{对数的定义}{36}{subsubsection*.66}%
 \contentsline {subsubsection}{对数的运算}{36}{subsubsection*.67}%
 \contentsline {subsection}{\numberline {3.4.4}对数函数}{36}{subsection.3.4.4}%
+\contentsline {subsubsection}{对数函数的定义}{36}{subsubsection*.68}%
 \contentsline {section}{\numberline {3.5}函数、方程、不等式之间的关系}{37}{section.3.5}%
 \contentsline {section}{\numberline {3.6}函数的应用}{37}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}对数函数：世界是对数的}{37}{subsection.3.6.1}%
@@ -116,5 +117,6 @@
 \contentsline {chapter}{\numberline {附录 A\hspace {.3em}}B版中的阅读材料}{45}{appendix.A}%
 \contentsline {section}{\numberline {A.1}利用复数产生分形图（复变函数）}{45}{section.A.1}%
 \contentsline {section}{\numberline {A.2}四元数简介}{46}{section.A.2}%
-\contentsline {chapter}{定理索引}{48}{appendix*.69}%
-\contentsline {chapter}{名词索引}{49}{section*.70}%
+\contentsline {section}{\numberline {A.3}素数个数与对数}{47}{section.A.3}%
+\contentsline {chapter}{定理索引}{48}{appendix*.71}%
+\contentsline {chapter}{名词索引}{49}{section*.72}%
