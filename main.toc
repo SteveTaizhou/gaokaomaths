@@ -104,24 +104,31 @@
 \contentsline {subsection}{\numberline {3.5.1}反函数的定义}{38}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}反函数的性质}{39}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}不同函数增长的差异}{39}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}函数、方程、不等式之间的关系}{41}{section.3.6}%
-\contentsline {section}{\numberline {3.7}函数的应用}{41}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}对数函数：世界是对数的}{41}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}指数函数：曾“几何”时}{41}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}幂函数：规模效应}{41}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}三角函数：波动的谐律}{41}{subsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.7.5}二次函数：宇宙之“2”}{41}{subsection.3.7.5}%
-\contentsline {subsection}{\numberline {3.7.6}再看函数：混沌中的确定}{41}{subsection.3.7.6}%
-\contentsline {chapter}{\numberline {第四章\hspace {.3em}}导数}{42}{chapter.4}%
-\contentsline {chapter}{\numberline {第五章\hspace {.3em}}平面向量、解三角形}{43}{chapter.5}%
-\contentsline {chapter}{\numberline {第六章\hspace {.3em}}立体几何}{44}{chapter.6}%
-\contentsline {chapter}{\numberline {第七章\hspace {.3em}}解析几何}{45}{chapter.7}%
-\contentsline {chapter}{\numberline {第八章\hspace {.3em}}排列组合}{46}{chapter.8}%
-\contentsline {chapter}{\numberline {第九章\hspace {.3em}}数列}{47}{chapter.9}%
-\contentsline {chapter}{\numberline {第十章\hspace {.3em}}统计与概率}{48}{chapter.10}%
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}B版中的阅读材料}{49}{appendix.A}%
-\contentsline {section}{\numberline {A.1}利用复数产生分形图（复变函数）}{49}{section.A.1}%
-\contentsline {section}{\numberline {A.2}四元数简介}{50}{section.A.2}%
-\contentsline {section}{\numberline {A.3}素数个数与对数}{51}{section.A.3}%
-\contentsline {chapter}{定理索引}{52}{appendix*.75}%
-\contentsline {chapter}{名词索引}{53}{section*.76}%
+\contentsline {section}{\numberline {3.6}等式与不等式}{40}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}等式与方程（组）的解集}{40}{subsection.3.6.1}%
+\contentsline {subsubsection}{等式的定义}{40}{subsubsection*.73}%
+\contentsline {subsubsection}{等式的性质}{41}{subsubsection*.74}%
+\contentsline {subsubsection}{方程的解集}{41}{subsubsection*.75}%
+\contentsline {subsubsection}{方程组的解集}{41}{subsubsection*.76}%
+\contentsline {subsection}{\numberline {3.6.2}不等式}{42}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}函数、方程、不等式之间的关系}{42}{section.3.7}%
+\contentsline {section}{\numberline {3.8}函数的应用}{42}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}对数函数：世界是对数的}{42}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}指数函数：曾“几何”时}{42}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}幂函数：规模效应}{42}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}三角函数：波动的谐律}{42}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}二次函数：宇宙之“2”}{42}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}再看函数：混沌中的确定}{42}{subsection.3.8.6}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}导数}{43}{chapter.4}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}平面向量、解三角形}{44}{chapter.5}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}立体几何}{45}{chapter.6}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}解析几何}{46}{chapter.7}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}排列组合}{47}{chapter.8}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}数列}{48}{chapter.9}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}统计与概率}{49}{chapter.10}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}B版中的阅读材料}{50}{appendix.A}%
+\contentsline {section}{\numberline {A.1}利用复数产生分形图（复变函数）}{50}{section.A.1}%
+\contentsline {section}{\numberline {A.2}四元数简介}{51}{section.A.2}%
+\contentsline {section}{\numberline {A.3}素数个数与对数}{52}{section.A.3}%
+\contentsline {chapter}{定理索引}{53}{appendix*.79}%
+\contentsline {chapter}{名词索引}{54}{section*.80}%
