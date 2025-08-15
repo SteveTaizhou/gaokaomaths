@@ -691,15 +691,14 @@
 
 \marginpar{
     \includegraphics[width=0.9\marginparwidth]{image9.png}\\
-    \footnotesize 你知道百度百科有多离谱吗
+    \footnotesize 图源：百度百科
 }
 
 \begin{thmlevel1}[棣莫弗公式]
     \(\forall x\in \mathbb{R}, n\in \mathbb{Z}\)，\[( \cos (x) + i \sin (x) )^n = \cos (nx) + i \sin (nx)\]
 \end{thmlevel1}
 
-证明可以先通过数学归纳法证明正整数的情况，再推广到负整数。注意，不可以使用欧拉公式进行证明，因为欧拉公式的证明中用到了棣莫弗公式，会造成循环论证。证明过程来自
-维基百科。
+证明可以先通过数学归纳法证明正整数的情况，再推广到负整数。注意，不可以使用欧拉公式进行证明，因为欧拉公式的证明中用到了棣莫弗公式，会造成循环论证。
 
 \begin{proof}
     先证\(P ( n ) = ( \cos \theta + \ii \sin \theta )^n =\cos (n \theta) + \ii \sin (n \theta) , n \in\mathbb{N}\)。采用数学归纳法。
@@ -1652,10 +1651,10 @@
 
 这告诉我们，一个函数可逆的充分必要条件是该函数为双射，即同时为
 
-\begin{description}
-    \item[单射] \(\forall x_1,x_2\in X,\ f(x_1)=f(x_2)\Rightarrow x_1=x_2\)。
-    \item[满射] \(\forall y\in Y,\exists x\in X, \ f(x)=y\)。
-\end{description}
+\begin{itemize}
+    \item 单射：\(\forall x_1,x_2\in X,\ f(x_1)=f(x_2)\Rightarrow x_1=x_2\)。
+    \item 满射：\(\forall y\in Y,\exists x\in X, \ f(x)=y\)。
+\end{itemize}
 
 验证一个函数是否为双射（也就可逆）的方法是水平线检验法，也就是函数图象须和纵坐标在到达域内的任何一条水平线有且仅有一个交点。
 
