@@ -1,6 +1,6 @@
 \documentclass[a4paper,openany]{ctexbook}
 
-\usepackage{amsmath,amssymb,imakeidx,booktabs,array,graphicx,amsthm,subcaption,wrapfig,thmtools}
+\usepackage{amsmath,amssymb,imakeidx,booktabs,array,graphicx,amsthm,subcaption,wrapfig,thmtools,etoolbox,txfonts}
 \usepackage{tikz}
 \usepackage{hyperref}
 \title{高考数学知识点汇总}
@@ -8,15 +8,25 @@
 \makeindex[intoc,columnseprule,title=名词索引]
 \graphicspath{{figures/}{logo/}}
 \newtheorem{thmlevel1}{定理}
+\newcounter{examplecounter}[section]
+\newtheorem{example}[examplecounter]{例题}
+\newtheorem*{solution}{解}
 \DeclareMathOperator{\card}{card}
 \renewcommand{\vec}{\overrightarrow}
-\newcommand{\ii}{\,\mathrm{i}}
+\renewcommand{\parallel}{\varparallel} \newcommand{\ii}{\,\mathrm{i}} \newcommand{\allproofs}{}
+\NewDocumentCommand\addproof{m m m+ s}{ \gappto{\allproofs}{\section*{#1
+          的\IfBooleanTF{#4}{解答}{证明}}\label{#2}#3} #1 的完整\IfBooleanTF{#4}{解答}{证明}见附录
+    \ref{#2}（第\pageref{#2}页）。 } \newcommand{\showproofs}{\allproofs}%%
 
 \begin{document}
 
 \frontmatter
 \maketitle
 这个文档从2025年8月8日开始编写．遵循 CC BY-NC-SA 4.0 开源协议。
+
+参考书目、网页、资料：
+《普通高中教科书人教版A》《普通高中教科书人教版B》《全品高考复习方案 听课手册》《必刷题合订本2024版 狂K重难点》《维基教科书》
+
 \tableofcontents
 
 \mainmatter
@@ -1769,6 +1779,128 @@
 
 \chapter{解析几何}
 
+未经特别说明，本章讨论在平面直角坐标系 \(xOy\) 中进行。当我们说“两条直线”“两点”等时，默认这些点或直线不重合。
+
+\section{直线}\index{直线}
+
+\subsection{直线的描述}
+
+\subsubsection{直线的倾斜角、斜率与方向向量}
+
+在平面直角坐标系中，当直线 \(l\) 与 \(x\) 轴相交时，我们以 \(x\) 轴为基准， \(x\) 轴正方向与直线 \(l\) 向上的方向之间所成的角 \(\alpha\) 叫作直
+线 \(l\) 的\textbf{倾斜角}\index{直线!倾斜角 angle of inclination}。特别地，当直线 \(l\) 与 \(x\) 轴平行或重合时，我们规定它的倾斜角为 \(0^\circ\)。
+
+对所有直线，倾斜角 \(\alpha \in [0,\pi )\)。
+
+一条直线的倾斜角 \(\alpha\,(\alpha \neq 90^\circ)\) 的正切值叫作这条直线的\textbf{斜率}\index{直线!斜率 slope}，即斜率 \(k = \tan \alpha\)。倾斜角为 \(90^\circ\) 的直线的斜率不
+存在。日常生活中常用的“坡度”概念是这样定义的： \(\text{坡度} = \dfrac{\text{铅直高度}}{\text{水平宽度}} \)。 当直线的倾斜角为锐角时，直线的斜率与坡度是类似的。
+
+过两点 \(P_1(x_1,y_1),P_2(x_2,y_2)\, (x_1 \neq x_2)\) 的直线的斜率 \(k = \dfrac{y_2 - y_1}{x_2 - x_1} \)。证明利用向量，见选必一 P52，在此不作赘述。
+
+倾斜角和斜率分别从形和数两个角度刻画了直线相对于 \(x\) 轴的倾斜程度。
+
+\begin{example}
+    如图，直线 \(l_1,l_2,l_3\) 的斜率分别为 \(k_1,k_2,k_3\)，倾斜角分别为 \(\alpha_1,\alpha_2,\alpha_3\)，则下列结论正确的是（多选）
+    \begin{tabular}{ll}
+        A. \(k_1 < k_3 < k_2\)                & B. \(k_3 < k_2 < k_1\)                \\
+        C. \(\alpha_1 < \alpha_3 < \alpha_2\) & D. \(\alpha_3 < \alpha_2 < \alpha_1\)
+    \end{tabular}
+\end{example}
+
+所有直线都有倾斜角，但斜率可能不存在。当且仅当直线与 \(x\) 轴垂直时，斜率不存在。
+
+若 \(P_1(x_1,y_1),P_2(x_2,y_2)\) 是直线 \(l\) 上两个不同的点，则向量 \(\vec{P_1P_2}\)是直线的方向向量。容易证明，直线 \(l\) 的方向
+向量与\(\vec{P_1P_2} = \dfrac{y_2 - y_1}{x_2 - x_1} \) 共线。也就是说，直线 \(l\) 的所有可能的方向向量都可以表示为 \(\lambda\vec{P_1P_2}\) 的
+形式，其中 \(\lambda\) 为某一确定的非零实数。
+
+若这条直线 \(l\) 的斜率为 \(k\) ，则它的一个方向向量为
+\(\dfrac{1}{x_2 - x_1}\vec{P_1P_2} = \left(\dfrac{x_2 - x_1}{x_2 - x_1},\dfrac{y_2 - y_1}{x_2 - x_1} \right) =(1,k)\)。
+
+一般地，已知 \(\vec{a} =(u,v)\) 为直线 \(l\) 的一个方向向量，则：
+\begin{itemize}
+    \item 当 \(u = 0\) 时，直线 \(l\) 的斜率不存在，倾斜角为 \(90^\circ\) ；
+    \item 当 \(u \neq 0\) 时，直线 \(l\) 的斜率 \(k = \dfrac{v}{u}\)，倾斜角 \(\alpha\) 满足 \(\tan \alpha = \dfrac{v}{u}\)。
+\end{itemize}
+
+\begin{example}
+    已知一条直线过点 \(A( - 2, 0),B( - 5,3 \sqrt{3})\) ，求这条直线的斜率和倾斜角。
+\end{example}
+
+\begin{solution}
+    因为 \( - 2 \neq - 5\)，所以斜率存在，设为 \(k\) ，并设倾斜角为 \(\alpha\)。则
+    \(\tan \alpha =k = \dfrac{3 \sqrt{3} - 0}{ - 5 + 2} = - \sqrt{3},\alpha = 120^\circ\)。
+\end{solution}
+
+\begin{example}
+    已知 \(A(1,3),B( - 2,1),C(4,m)\) 三点在同一条直线上，求 \(m\) 的值。
+\end{example}
+
+这是一个三点共线问题，核心在于先把直线 \(AB,BC\) （或 \(AB,AC\) 等）看作两条直线，然后利用斜率相等（或同为不存在）进行求解。更基本的做法是利用向量平行。这些解法能
+成立的核心在于，一点和一个方向可以确定一条直线。
+
+\begin{solution}
+    斜率算两次： \(k_{AB} = \dfrac{1 - 3}{( - 2) - 1} =\dfrac{2}{3},\, k_{BC} = \dfrac{m - 1}{4 -( - 2)} = \dfrac{m - 1}{6} \)，因为 \(A,B,C\) 三点共线，所以
+    \(k_{AB} = k_{BC}\)，解得 \(m = 5\)。
+\end{solution}
+
+\begin{example}\label{AB含参倾斜角}
+    已知一条直线经过 \(A(2,1),B(1,m^2)\, (m \in \mathbb{R} )\) 两点，求此直线的倾斜角 \(\alpha\) 的取值范围。
+\end{example}
+
+\addproof{例题 \ref{AB含参倾斜角}}{b6ac105e-b896-403e-bea1-f09d55f56e7c}{
+    \(\tan \alpha = k_{AB} = \dfrac{m^2 - 1}{1 - 2} = 2 - m^2 \in ( - \infty ,1]\)，则 \(\alpha \in [0,\dfrac{\pi }{4} ]\cup(\dfrac{\pi }{2} ,\pi )\)。
+}*
+
+\subsubsection{直线的5种常见方程}
+
+直线是平面上的点的集合，点又可以由含两个变量 \(x,y\) 的坐标唯一确定，因此可以用关于 \(x,y\) 的方程表示一条直线，满足这个方程的解构成的 \((x,y)\) 表示直线上的点。直线的5种常见方程常见形式如下：
+
+\begin{description}
+    \item[点斜式] \(y - y_0 = k(x - x_0)\) 表示过点 \((x_0,y_0)\) 且斜率为 \(k\) 的直线，但不能表示直线 \(x = x_0\)；
+    \item[斜截式] \(y = kx + m\) 表示斜率为 \(k\) 且 \(y\) 轴截距为 \(m\) 的直线，但不能表示垂直于 \(x\) 轴的直线；
+    \item[两点式] \(\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1} \)表示过两点 \((x_1,y_1),(x_2,y_2)\)的直线，当 \(x_1 = x_2\) 或 \(y_1 = y_2\) 时，不能表示过这两点的直线；
+    \item[截距式] \(\dfrac{x}{a} + \dfrac{y}{b}= 1\) 表示\(x\) 轴截距为 \(a\) 且 \(y\) 轴截距为 \(b\) 的直线，但不能表示垂直于 \(x\) 轴或者 \(y\) 轴的直线；
+    \item[一般式] \(Ax + By + C = 0\, (A^2 + B^2\neq 0)\) 可以表示任何直线，这样的直线以 \( - \dfrac{A}{B}\) 为斜率（若存在），以 \(( - B,A)\) 为方向向量，以 \((A,B)\) 为法向量的直线。
+\end{description}
+
+请特别注意某一种方程无法表示的情况。
+
+事实上，两点式经过变形可以得到更强的形式： \((y - y_1)(x_2 - x_1) =(x - x_1)(y_2 - y_1)\)。试证明这样的直线可以表示过两点 \((x_1,y_1),(x_2,y_2)\) 的直线，不论 \(x_1,x_2\) 与 \(y_1,y_2\) 各自是否相等。请读者尝试证明。%
+\addproof{更强的两点式}{c5b67f35-9160-4c16-9b7e-415ec197349d}{
+    当 \(x_1 \neq x_2\) 且 \(y_1 \neq y_2\) 时，可化为\(\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1} \) 的形式，显然；
+    当 \(x_1 = x_2\) 时，原方程化为 \(0 =(x - x_1)(y_2 - y_1)\)，因为 \(y_1 \neq y_2\)，所以该式等价于 \(x = x_1\)，显然；
+    当 \(y_1 = y_2\) 时，与上同理。
+}
+
+\subsubsection{*直线的点向式、点法式与参数方程}
+
+当斜率存在且不为 \(0\) 时，直线的点斜式方程\(y - y_0 = k(x - x_0)\) 很容易改写为点向式方程： \(\dfrac{x - x_0}{1} = \dfrac{y - y_0}{k}\)，其一般形式为 \[\dfrac{x - x_0}{a} = \dfrac{y - y_0}{b}\]
+
+从点向式方程可以轻松看出，向量 \(\vec{v} =(a,b)\) 是直线的一个方向向量。反之，如果已知直线经过的点与方向向量，也容易写出此点向式方程。
+
+对于一般形式的直线 \(Ax + By =- C\, (AB \neq 0)\)，也容易得到点向式方程为 \(\dfrac{x- x_0}{B} = -\dfrac{y - y_0}{A} \)，其中\(x_0,y_0\) 满足 \(Ax_0 + By_0 + C= 0\) ，即点 \((x_0,y_0)\) 在直线上。进一步变形可以得到：
+\[A(x - x_0) = B(y - y_0)\qquad (A^2 + B^2 \neq 0)\]
+
+这就是直线的点法式方程，没有了 \(A,B\) 都不能为 \(0\) 的限制。
+
+在点向式的基础上，如果再设 \(t = \dfrac{x - x_0}{a} = \dfrac{y - y_0}{b} \)，则由点向式方程可得：
+\[\begin{cases}
+        x=x_0+at \\
+        y=y_0+bt
+    \end{cases}\]
+
+上式中的 \(x,y\) 可视为由参变量 \(t\) 的取值而定，因此叫做以 \(t\) 为参变量的直线的\textbf{参数方程}\index{直线!参数方程 parametric equation}。参变量通常有取值范围。满足该方程的直线经过点 \(P_0(x_0,y_0)\)，
+且\((a,b)\) 是它的一个方向向量。
+
+\begin{proof}
+    设直线 \(l\) 经过点 \(P_0(x_0,y_0),\vec{v} =(a,b)\) 是它的一个方向向量。再设 \(P(x,y)\) 是直线 \(l\) 上的任意一点，则由 \(\vec{P_0P} \parallel \vec{v}\)，可知存在唯一的实数 \(t\) ，使得：
+    \[
+        \vec{P_0P} = t\, \vec{v}\quad \implies (x - x_0,y - y_0) = t(a,b) \implies \begin{cases} x = x_0 + at\\y = y_0 + bt \end{cases}
+    \]
+\end{proof}
+
+特别地，当 \(a^2 + b^2 = 1\)，即 \(\vec{v}\) 为单位方向向量，则 \(|\vec{P_0P}|=|t\, \vec{v}|=|t|\)。这就是说，直线 \(l\) 上任意一点 \(P\) 到直线上一点 \(P_0(x_0,y_0)\) 的距离即为该点所对应参变量 \(t\) 的绝对值。
+
 \chapter{排列组合}
 
 \chapter{数列}
@@ -1777,6 +1909,11 @@
 
 \appendix
 
+\twocolumn
+\chapter{完整证明及解答}
+\showproofs
+
+\onecolumn
 \chapter{B版中的阅读材料}
 
 本附录收录了人教版B版高中教材中的部分阅读材料，作为补充阅读之用，顺序大致与本书内容对应。\marginpar{\footnotesize 我们A版学生也是太悲催了}

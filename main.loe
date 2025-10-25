@@ -7,3 +7,10 @@
 \contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}5\else \numberline {5}定理\fi \thmtformatoptarg {二次韦达定理}}{12}{thmlevel1.5}%
 \contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}6\else \numberline {6}定理\fi \thmtformatoptarg {代数基本定理}}{13}{thmlevel1.6}%
 \contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}7\else \numberline {7}定理\fi \thmtformatoptarg {棣莫弗公式}}{16}{thmlevel1.7}%
+\addvspace {10\p@ }
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}1\else \numberline {1}例题\fi }{45}{example.7.1.1}%
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}2\else \numberline {2}例题\fi }{46}{example.7.1.2}%
+\contentsline {solution}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi 解}{46}{thmt@dummyctr.dummy.10}%
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}3\else \numberline {3}例题\fi }{46}{example.7.1.3}%
+\contentsline {solution}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi 解}{46}{thmt@dummyctr.dummy.12}%
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}4\else \numberline {4}例题\fi }{46}{example.7.1.4}%

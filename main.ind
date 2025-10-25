@@ -13,38 +13,42 @@
   \item 全集 universal set, \hyperpage{4}
   \item 共轭复数 conjugate complex number, \hyperpage{9}
   \item 函数 function, \hyperpage{19}
-  \item 反函数 inverse function, \hyperpage{38}
+  \item 反函数 inverse function, \hyperpage{37}
   \item 复数 complex number, \hyperpage{7}
   \item 复数的模 modulus of a complex number, \hyperpage{9}
   \item 复数集 set of complex numbers, \hyperpage{7}
-  \item 奇函数 odd function, \hyperpage{24}
+  \item 奇函数 odd function, \hyperpage{23}
   \item 子集 subset, \hyperpage{2}
   \item 存在量词 existential quantifier, \hyperpage{6}
   \item 定义域 domain, \hyperpage{19}
   \item 实部 real part, \hyperpage{7}
-  \item 对数 logarithm, \hyperpage{37}
-  \item 对数函数 logarithmic function, \hyperpage{37}
+  \item 对数 logarithm, \hyperpage{36}
+  \item 对数函数 logarithmic function, \hyperpage{36}
   \item 属于 belong to, \hyperpage{1}
-  \item 常用对数 common logarithm, \hyperpage{37}
-  \item 幂函数 power function, \hyperpage{27}
+  \item 常用对数 common logarithm, \hyperpage{36}
+  \item 幂函数 power function, \hyperpage{26}
   \item 并集 union set, \hyperpage{3}
   \item 必要条件 necessary condition, \hyperpage{5}
 
   \indexspace
 
-  \item 指数函数 exponential function, \hyperpage{35}
-  \item 最大值 maximum value, \hyperpage{23}
+  \item 指数函数 exponential function, \hyperpage{34}
+  \item 最大值 maximum value, \hyperpage{22}
   \item 最小值 minimum value, \hyperpage{23}
-  \item 根式 radical, \hyperpage{34}
+  \item 根式 radical, \hyperpage{33}
 
   \indexspace
 
+  \item 直线, \hyperpage{45}
+    \subitem 倾斜角 angle of inclination, \hyperpage{45}
+    \subitem 参数方程 parametric equation, \hyperpage{47}
+    \subitem 斜率 slope, \hyperpage{45}
   \item 真子集 proper subset, \hyperpage{2}
   \item 空集 empty set, \hyperpage{1}
 
   \indexspace
 
-  \item 自然对数 natural logarithm, \hyperpage{37}
+  \item 自然对数 natural logarithm, \hyperpage{36}
   \item 虚数 imaginary number, \hyperpage{7}
   \item 虚数单位 imaginary unit, \hyperpage{7}
   \item 虚部 imaginary part, \hyperpage{7}
