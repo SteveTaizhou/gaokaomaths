@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.13)  25 OCT 2025 17:24
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.13)  1 NOV 2025 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,57 +854,58 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 
 Writing index file main.idx
 \c@thmlevel1=\count358
-\c@examplecounter=\count359
-LaTeX Font Info:    Trying to load font information for TU+txr on input line 21.
-LaTeX Font Info:    No file TUtxr.fd. on input line 21.
+\c@formula=\count359
+\c@example=\count360
+LaTeX Font Info:    Trying to load font information for TU+txr on input line 23.
+LaTeX Font Info:    No file TUtxr.fd. on input line 23.
 
 LaTeX Font Warning: Font shape `TU/txr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 21.
+(Font)              using `TU/lmr/m/n' instead on input line 23.
 
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 21.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 21.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 23.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 23.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 23.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 23.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 23.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 23.
  (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -912,32 +913,32 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count360
+\c@section@level=\count361
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 25.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 27.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 25.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 27.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 27.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 25.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 27.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 25.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 27.
  (c:/texlive/2022/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) [1
@@ -947,12 +948,12 @@ File: utxsyc.fd 2000/12/15 v3.1
 ]
 
 LaTeX Font Warning: Font shape `TU/txr/m/sl' undefined
-(Font)              using `TU/txr/m/n' instead on input line 30.
+(Font)              using `TU/txr/m/n' instead on input line 32.
 
 [2]
 
 LaTeX Font Warning: Font shape `TU/txr/b/n' undefined
-(Font)              using `TU/txr/m/n' instead on input line 30.
+(Font)              using `TU/txr/m/n' instead on input line 32.
 
 (./main.toc [3
 
@@ -968,7 +969,7 @@ LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not availa
 ]
 第一章
 
-Overfull \hbox (12.13782pt too wide) in paragraph at lines 45--48
+Overfull \hbox (12.13782pt too wide) in paragraph at lines 47--50
 []\TU/SimSun(0)/m/n/10.53937 我 们 通 常 用 大 写 拉 丁 字 母 $\OML/txmi/m/it/10.53937 A; B; C []$ \TU/SimSun(0)/m/n/10.53937 表 示 集 合，|  用 小 写 拉 丁 字 母 用 $\OML/txmi/m/it/10.53937 a; b; c; []$
  []
 
@@ -977,17 +978,17 @@ Overfull \hbox (12.13782pt too wide) in paragraph at lines 45--48
 ]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 104.
+(Font)              using `TU/txr/m/sl' instead on input line 106.
 
 [2]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 131.
+(Font)              using `TU/txr/m/sl' instead on input line 133.
 
-Package hyperref Info: bookmark level for unknown thmlevel1 defaults to 0 on input line 131.
+Package hyperref Info: bookmark level for unknown thmlevel1 defaults to 0 on input line 133.
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 136.
+(Font)              using `TU/txr/m/sl' instead on input line 138.
 
 [3]
 File: figures//image1.png Graphic file (type bmp)
@@ -999,29 +1000,29 @@ File: figures//image2.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 218.
+(Font)              using `TU/txr/m/sl' instead on input line 220.
 
 [4]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 232.
+(Font)              using `TU/txr/m/sl' instead on input line 234.
 
 [5] [6]
 第二章
 [7
 
 ]
-Overfull \hbox (6.93967pt too wide) in paragraph at lines 333--334
+Overfull \hbox (6.93967pt too wide) in paragraph at lines 335--336
  [][] 
  []
 
 
-Overfull \hbox (6.93967pt too wide) in paragraph at lines 347--348
+Overfull \hbox (6.93967pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
 
-Overfull \hbox (11.10356pt too wide) in paragraph at lines 362--363
+Overfull \hbox (11.10356pt too wide) in paragraph at lines 364--365
  [][] 
  []
 
@@ -1033,21 +1034,21 @@ File: figures//image5.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 467.
+(Font)              using `TU/txr/m/sl' instead on input line 469.
 
 [10] [11]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 552.
+(Font)              using `TU/txr/m/sl' instead on input line 554.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 566.
+(Font)              using `TU/txr/m/sl' instead on input line 568.
 
 [12]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 576.
+(Font)              using `TU/txr/m/sl' instead on input line 578.
 
 [13] [14]
 File: figures//image7.png Graphic file (type bmp)
@@ -1062,14 +1063,14 @@ LaTeX Warning: Marginpar on page 16 moved.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 707.
+(Font)              using `TU/txr/m/sl' instead on input line 709.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 714.
+(Font)              using `TU/txr/m/sl' instead on input line 716.
 
 [16]
-Overfull \hbox (12.14688pt too wide) in paragraph at lines 817--818
+Overfull \hbox (12.14688pt too wide) in paragraph at lines 819--820
  [][] 
  []
 
@@ -1087,11 +1088,11 @@ File: figures//image12.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 901.
+(Font)              using `TU/txr/m/sl' instead on input line 903.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 901.
+(Font)              using `TU/txr/m/sl' instead on input line 903.
 
 File: figures//image13.png Graphic file (type bmp)
 <figures//image13.png>
@@ -1102,36 +1103,36 @@ LaTeX Warning: Marginpar on page 21 moved.
 [21]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 992.
+(Font)              using `TU/txr/m/sl' instead on input line 994.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 1003.
+(amsmath)                 on input line 1005.
 
 [22] [23]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1094.
+(Font)              using `TU/txr/m/sl' instead on input line 1096.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1105.
+(Font)              using `TU/txr/m/sl' instead on input line 1107.
 
 [24] [25]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1146.
+(Font)              using `TU/txr/m/sl' instead on input line 1148.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1154.
+(Font)              using `TU/txr/m/sl' instead on input line 1156.
 
 [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Overfull \hbox (6.5317pt too wide) in paragraph at lines 1242--1243
+Overfull \hbox (6.5317pt too wide) in paragraph at lines 1244--1245
  [][] 
  []
 
@@ -1205,76 +1206,108 @@ File: figures//image33.png Graphic file (type bmp)
 
 ]
 第七章
-
-LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1803.
-
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 1803.
 [45
 
 ]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
+(Font)              using `TU/txr/m/sl' instead on input line 1822.
+
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 1822.
+
+LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
 (Font)              using `TU/txr/m/sl' instead on input line 1826.
 
+Package hyperref Info: bookmark level for unknown solution defaults to 0 on input line 1826.
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1830.
+(Font)              using `TU/txr/m/sl' instead on input line 1831.
 
-Package hyperref Info: bookmark level for unknown solution defaults to 0 on input line 1830.
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1835.
+(Font)              using `TU/txr/m/sl' instead on input line 1838.
 
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
 (Font)              using `TU/txr/m/sl' instead on input line 1842.
 
+[46] [47]
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1846.
+(Font)              using `TU/txr/m/sl' instead on input line 1917.
 
-[46]
+Package hyperref Info: bookmark level for unknown formula defaults to 0 on input line 1917.
 
 LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
-(Font)              using `TU/txr/m/sl' instead on input line 1896.
+(Font)              using `TU/txr/m/sl' instead on input line 1923.
 
-[47] [48]
+
+LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
+(Font)              using `TU/txr/m/sl' instead on input line 1957.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 1957.
+
+File: figures//image35.png Graphic file (type bmp)
+<figures//image35.png>
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 1961.
+
+[48]
+
+LaTeX Font Warning: Font shape `TU/txr/m/it' undefined
+(Font)              using `TU/txr/m/sl' instead on input line 1964.
+
+[49]
 第八章
-[49
-
-]
-第九章
 [50
 
 ]
-第十章
+第九章
 [51
 
 ]
-附录 A
+第十章
 [52
 
-
-
 ]
+附录 A
+File: figures//image34.png Graphic file (type bmp)
+<figures//image34.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1985--1985
+\TU/SimSun(0)/m/n/10.53937 段 $\OML/txmi/m/it/10.53937 PQ$ \TU/SimSun(0)/m/n/10.53937 的 长 度。|
+ []
+
+
+Overfull \hbox (26.1968pt too wide) detected at line 1985
+[]
+ []
+
+
+Overfull \hbox (115.39368pt too wide) in paragraph at lines 1985--1985
+[] 
+ []
+
+[53
+
+] [54]
 附录 B
 File: figures//image6.png Graphic file (type bmp)
 <figures//image6.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53
+ [55
 
-
-] [54]
+] [56]
 showing thmlevel1
-[55] (./main.loe) [56
+[57] (./main.loe) [58
 
 ]
 runsystem(makeindex main.idx)...executed safely (allowed).
 
- (./main.ind [57
+ (./main.ind [59
 
 
 ])
@@ -1286,15 +1319,15 @@ runsystem(makeindex main.idx)...executed safely (allowed).
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6C394D71FEA92F1FB3EDA98C8FA38953;9645.
+(rerunfilecheck)             Checksum: 1ADB029BED7F73574B8B0B607B50BA09;9771.
  ) 
 Here is how much of TeX's memory you used:
- 31181 strings out of 478126
- 686860 string characters out of 5853227
- 924756 words of memory out of 5000000
- 51223 multiletter control sequences out of 15000+600000
+ 31225 strings out of 478126
+ 688184 string characters out of 5853227
+ 925335 words of memory out of 5000000
+ 51265 multiletter control sequences out of 15000+600000
  501523 words of font info for 149 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  89i,17n,131p,477b,853s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (63 pages).
+Output written on main.pdf (65 pages).

@@ -128,13 +128,16 @@
 \contentsline {subsubsection}{直线的倾斜角、斜率与方向向量}{45}{subsubsection*.77}%
 \contentsline {subsubsection}{直线的5种常见方程}{46}{subsubsection*.78}%
 \contentsline {subsubsection}{*直线的点向式、点法式与参数方程}{47}{subsubsection*.79}%
-\contentsline {chapter}{\numberline {第八章\hspace {.3em}}排列组合}{49}{chapter.8}%
-\contentsline {chapter}{\numberline {第九章\hspace {.3em}}数列}{50}{chapter.9}%
-\contentsline {chapter}{\numberline {第十章\hspace {.3em}}统计与概率}{51}{chapter.10}%
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}完整证明及解答}{52}{appendix.A}%
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}B版中的阅读材料}{53}{appendix.B}%
-\contentsline {section}{\numberline {B.1}利用复数产生分形图（复变函数）}{53}{section.B.1}%
-\contentsline {section}{\numberline {B.2}四元数简介}{54}{section.B.2}%
-\contentsline {section}{\numberline {B.3}素数个数与对数}{55}{section.B.3}%
-\contentsline {chapter}{定理索引}{56}{appendix*.84}%
-\contentsline {chapter}{名词索引}{57}{section*.85}%
+\contentsline {subsection}{\numberline {7.1.2}两直线的位置关系}{48}{subsection.7.1.2}%
+\contentsline {subsubsection}{平行}{48}{subsubsection*.80}%
+\contentsline {subsubsection}{距离公式}{48}{subsubsection*.81}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}排列组合}{50}{chapter.8}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}数列}{51}{chapter.9}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}统计与概率}{52}{chapter.10}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}完整证明及解答}{53}{appendix.A}%
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}B版中的阅读材料}{55}{appendix.B}%
+\contentsline {section}{\numberline {B.1}利用复数产生分形图（复变函数）}{55}{section.B.1}%
+\contentsline {section}{\numberline {B.2}四元数简介}{56}{section.B.2}%
+\contentsline {section}{\numberline {B.3}素数个数与对数}{57}{section.B.3}%
+\contentsline {chapter}{定理索引}{58}{appendix*.89}%
+\contentsline {chapter}{名词索引}{59}{section*.90}%

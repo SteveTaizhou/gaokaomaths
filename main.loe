@@ -1,16 +1,18 @@
 \addvspace {10\p@ }
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}1\else \numberline {1}定理\fi \thmtformatoptarg {有限非空集的子集个数}}{3}{thmlevel1.1}%
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}2\else \numberline {2}定理\fi \thmtformatoptarg {德摩根公式}}{5}{thmlevel1.2}%
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}3\else \numberline {3}定理\fi \thmtformatoptarg {容斥原理}}{5}{thmlevel1.3}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}1.1\else \numberline {1.1}定理\fi \thmtformatoptarg {有限非空集的子集个数}}{3}{thmlevel1.1.1}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}1.2\else \numberline {1.2}定理\fi \thmtformatoptarg {德摩根公式}}{5}{thmlevel1.1.2}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}1.3\else \numberline {1.3}定理\fi \thmtformatoptarg {容斥原理}}{5}{thmlevel1.1.3}%
 \addvspace {10\p@ }
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}4\else \numberline {4}定理\fi \thmtformatoptarg {复数的绝对值三角不等式}}{10}{thmlevel1.4}%
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}5\else \numberline {5}定理\fi \thmtformatoptarg {二次韦达定理}}{12}{thmlevel1.5}%
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}6\else \numberline {6}定理\fi \thmtformatoptarg {代数基本定理}}{13}{thmlevel1.6}%
-\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}7\else \numberline {7}定理\fi \thmtformatoptarg {棣莫弗公式}}{16}{thmlevel1.7}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}2.1\else \numberline {2.1}定理\fi \thmtformatoptarg {复数的绝对值三角不等式}}{10}{thmlevel1.2.1}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}2.2\else \numberline {2.2}定理\fi \thmtformatoptarg {二次韦达定理}}{12}{thmlevel1.2.2}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}2.3\else \numberline {2.3}定理\fi \thmtformatoptarg {代数基本定理}}{13}{thmlevel1.2.3}%
+\contentsline {thmlevel1}{\ifthmt@listswap 定理\nobreakspace {}2.4\else \numberline {2.4}定理\fi \thmtformatoptarg {棣莫弗公式}}{16}{thmlevel1.2.4}%
 \addvspace {10\p@ }
-\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}1\else \numberline {1}例题\fi }{45}{example.7.1.1}%
-\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}2\else \numberline {2}例题\fi }{46}{example.7.1.2}%
-\contentsline {solution}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi 解}{46}{thmt@dummyctr.dummy.10}%
-\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}3\else \numberline {3}例题\fi }{46}{example.7.1.3}%
-\contentsline {solution}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi 解}{46}{thmt@dummyctr.dummy.12}%
-\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}4\else \numberline {4}例题\fi }{46}{example.7.1.4}%
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}7.1.1\else \numberline {7.1.1}例题\fi }{46}{example.7.1.1}%
+\contentsline {solution}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi 解}{46}{thmt@dummyctr.dummy.9}%
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}7.1.2\else \numberline {7.1.2}例题\fi }{46}{example.7.1.2}%
+\contentsline {solution}{\ifthmt@listswap \else \numberline {\let \autodot \@empty }\fi 解}{46}{thmt@dummyctr.dummy.11}%
+\contentsline {example}{\ifthmt@listswap 例题\nobreakspace {}7.1.3\else \numberline {7.1.3}例题\fi }{46}{example.7.1.3}%
+\contentsline {formula}{\ifthmt@listswap 公式\nobreakspace {}1\else \numberline {1}公式\fi \thmtformatoptarg {两点间距离公式}}{48}{formula.1}%
+\contentsline {formula}{\ifthmt@listswap 公式\nobreakspace {}2\else \numberline {2}公式\fi \thmtformatoptarg {点到直线的距离公式}}{48}{formula.2}%
+\contentsline {formula}{\ifthmt@listswap 公式\nobreakspace {}3\else \numberline {3}公式\fi \thmtformatoptarg {平行线间的距离公式}}{49}{formula.3}%

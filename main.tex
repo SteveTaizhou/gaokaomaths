@@ -6,17 +6,19 @@
 \title{高考数学知识点汇总}
 \author{张书源}
 \makeindex[intoc,columnseprule,title=名词索引]
+\allowdisplaybreaks
 \graphicspath{{figures/}{logo/}}
-\newtheorem{thmlevel1}{定理}
-\newcounter{examplecounter}[section]
-\newtheorem{example}[examplecounter]{例题}
+\newtheorem{thmlevel1}{定理}[chapter]
+\newtheorem{formula}{公式}
+\newtheorem{example}{例题}[section]
 \newtheorem*{solution}{解}
 \DeclareMathOperator{\card}{card}
 \renewcommand{\vec}{\overrightarrow}
 \renewcommand{\parallel}{\varparallel} \newcommand{\ii}{\,\mathrm{i}} \newcommand{\allproofs}{}
-\NewDocumentCommand\addproof{m m m+ s}{ \gappto{\allproofs}{\section*{#1
-          的\IfBooleanTF{#4}{解答}{证明}}\label{#2}#3} #1 的完整\IfBooleanTF{#4}{解答}{证明}见附录
-    \ref{#2}（第\pageref{#2}页）。 } \newcommand{\showproofs}{\allproofs}%%
+\NewDocumentCommand\addproof{m o m +m s}{ \gappto{\allproofs}{\section*{#1
+          \IfBooleanT{#5}{的解答}}\label{#3}#4}\IfNoValueTF{#2}{#1
+        的完整\IfBooleanTF{#5}{解答}{证明}}{#2}见附录 \ref{#3}（第\pageref{#3}页）。 }
+\newcommand{\showproofs}{\allproofs}%%
 
 \begin{document}
 
@@ -1795,17 +1797,11 @@
 一条直线的倾斜角 \(\alpha\,(\alpha \neq 90^\circ)\) 的正切值叫作这条直线的\textbf{斜率}\index{直线!斜率 slope}，即斜率 \(k = \tan \alpha\)。倾斜角为 \(90^\circ\) 的直线的斜率不
 存在。日常生活中常用的“坡度”概念是这样定义的： \(\text{坡度} = \dfrac{\text{铅直高度}}{\text{水平宽度}} \)。 当直线的倾斜角为锐角时，直线的斜率与坡度是类似的。
 
-过两点 \(P_1(x_1,y_1),P_2(x_2,y_2)\, (x_1 \neq x_2)\) 的直线的斜率 \(k = \dfrac{y_2 - y_1}{x_2 - x_1} \)。证明利用向量，见选必一 P52，在此不作赘述。
+过两点 \(P_1(x_1,y_1),P_2(x_2,y_2)\, (x_1 \neq x_2)\) 的直线的斜率
+\[\boxed{k = \dfrac{y_2 - y_1}{x_2 - x_1}} \]
+证明利用向量，见选必一 P52，在此不作赘述。
 
 倾斜角和斜率分别从形和数两个角度刻画了直线相对于 \(x\) 轴的倾斜程度。
-
-\begin{example}
-    如图，直线 \(l_1,l_2,l_3\) 的斜率分别为 \(k_1,k_2,k_3\)，倾斜角分别为 \(\alpha_1,\alpha_2,\alpha_3\)，则下列结论正确的是（多选）
-    \begin{tabular}{ll}
-        A. \(k_1 < k_3 < k_2\)                & B. \(k_3 < k_2 < k_1\)                \\
-        C. \(\alpha_1 < \alpha_3 < \alpha_2\) & D. \(\alpha_3 < \alpha_2 < \alpha_1\)
-    \end{tabular}
-\end{example}
 
 所有直线都有倾斜角，但斜率可能不存在。当且仅当直线与 \(x\) 轴垂直时，斜率不存在。
 
@@ -1857,20 +1853,22 @@
 
 \begin{description}
     \item[点斜式] \(y - y_0 = k(x - x_0)\) 表示过点 \((x_0,y_0)\) 且斜率为 \(k\) 的直线，但不能表示直线 \(x = x_0\)；
-    \item[斜截式] \(y = kx + m\) 表示斜率为 \(k\) 且 \(y\) 轴截距为 \(m\) 的直线，但不能表示垂直于 \(x\) 轴的直线；
+    \item[斜截式] \(y = kx + b\) 表示斜率为 \(k\) 且 \(y\) 轴截距为 \(b\) 的直线，但不能表示垂直于 \(x\) 轴的直线\footnote{本书中，为了和圆锥曲线中的量 \(b\) 作区分，统一设为 \(y = kx + m\) 的形式。}；
     \item[两点式] \(\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1} \)表示过两点 \((x_1,y_1),(x_2,y_2)\)的直线，当 \(x_1 = x_2\) 或 \(y_1 = y_2\) 时，不能表示过这两点的直线；
     \item[截距式] \(\dfrac{x}{a} + \dfrac{y}{b}= 1\) 表示\(x\) 轴截距为 \(a\) 且 \(y\) 轴截距为 \(b\) 的直线，但不能表示垂直于 \(x\) 轴或者 \(y\) 轴的直线；
-    \item[一般式] \(Ax + By + C = 0\, (A^2 + B^2\neq 0)\) 可以表示任何直线，这样的直线以 \( - \dfrac{A}{B}\) 为斜率（若存在），以 \(( - B,A)\) 为方向向量，以 \((A,B)\) 为法向量的直线。
+    \item[一般式] \(Ax + By + C = 0\, (A^2 + B^2\neq 0)\) 可以表示任何直线，这样的直线以 \( - \dfrac{A}{B}\) 为斜率（若存在），以 \(( - B,A)\) 为方向向量，以 \((A,B)\) 为法向量的直线。法向量即与任意一个方向向量均垂直的向量。
 \end{description}
 
-请特别注意某一种方程无法表示的情况。
+请特别注意某一种方程无法表示的情况。实际答题中，最终结果建议化为一般式。
 
-事实上，两点式经过变形可以得到更强的形式： \((y - y_1)(x_2 - x_1) =(x - x_1)(y_2 - y_1)\)。试证明这样的直线可以表示过两点 \((x_1,y_1),(x_2,y_2)\) 的直线，不论 \(x_1,x_2\) 与 \(y_1,y_2\) 各自是否相等。请读者尝试证明。%
-\addproof{更强的两点式}{c5b67f35-9160-4c16-9b7e-415ec197349d}{
-    当 \(x_1 \neq x_2\) 且 \(y_1 \neq y_2\) 时，可化为\(\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1} \) 的形式，显然；
-    当 \(x_1 = x_2\) 时，原方程化为 \(0 =(x - x_1)(y_2 - y_1)\)，因为 \(y_1 \neq y_2\)，所以该式等价于 \(x = x_1\)，显然；
-    当 \(y_1 = y_2\) 时，与上同理。
-}
+事实上，两点式经过变形可以得到更强的形式： \((y - y_1)(x_2 - x_1) =(x - x_1)(y_2 - y_1)\)。这样的直线可以表示过两点 \((x_1,y_1),(x_2,y_2)\) 的直线，不论 \(x_1,x_2\) 与 \(y_1,y_2\) 各自是否相等。读者自证不难。
+% \addproof{更强的两点式}{c5b67f35-9160-4c16-9b7e-415ec197349d}{
+%     当 \(x_1 \neq x_2\) 且 \(y_1 \neq y_2\) 时，可化为\(\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1} \) 的形式，显然；
+%     当 \(x_1 = x_2\) 时，原方程化为 \(0 =(x - x_1)(y_2 - y_1)\)，因为 \(y_1 \neq y_2\)，所以该式等价于 \(x = x_1\)，显然；
+%     当 \(y_1 = y_2\) 时，与上同理。
+% }
+
+容易得出，经过点 \(P(a,b)\) 且平行于 \(x\) 轴的直线方程为 \(y = b\)，平行于 \(y\) 轴的直线方程为 \(x = a\) ，过原点且斜率为 \(k\) 的直线方程为 \(y = kx\)。
 
 \subsubsection{*直线的点向式、点法式与参数方程}
 
@@ -1890,16 +1888,90 @@
     \end{cases}\]
 
 上式中的 \(x,y\) 可视为由参变量 \(t\) 的取值而定，因此叫做以 \(t\) 为参变量的直线的\textbf{参数方程}\index{直线!参数方程 parametric equation}。参变量通常有取值范围。满足该方程的直线经过点 \(P_0(x_0,y_0)\)，
-且\((a,b)\) 是它的一个方向向量。
+且\((a,b)\) 是它的一个方向向量。直线上的每一个点与参变量一一对应，证明可以使用向量平行的充要条件。
+
+特别地，当 \(a^2 + b^2 = 1\)，即 \(\vec{v}\) 为单位方向向量，则 \(|\vec{P_0P}|=|t\, \vec{v}|=|t|\)。这就是说，直线 \(l\) 上任意一点 \(P\) 到直线上一点 \(P_0(x_0,y_0)\) 的距离即为该点所对应参变量 \(t_0\) 的绝对值，也就是
+\(d_{PP_0} =|t_0|\)。此时，我们进行三角换元：令 \(\begin{cases} \cos \theta = a \\ \sin \theta = b \end{cases} \)，显然 \(\vec{v} =(\cos \theta ,\sin \theta )\) 为单位方向向量。此时，参数方程可以写作：
+\[\begin{cases}
+        x=x_0 + t\cos \theta \\
+        y=y_0 + t\sin \theta
+    \end{cases}\]
+
+这里的常数 \(\theta \) 具有确定的含义，当 \(\theta \in [0,\pi )\) 时，它就是直线 \(l\)  的倾斜角。读者可以自行证明。
+
+在高中解析几何中，相较而言，参数方程的应用更为广泛。点向式、点法式的意义在于，它们可以轻松的推广到三维以及更高维度的情形，而单个等号的方程在三维空间内只能表示一个平面。
+
+\subsection{两直线的位置关系}
+
+接下来以斜截式 \(l_1:y = k_1x + m_1,\, l_2:y = k_2x + m_2\)  和一般式 \(l_1 :A_1x + B_1y + C_1 = 0,\, l_2:A_2x + B_2y + C_2 = 0\)  为例来说明两直线的位置关系。若斜率不存在，则仅取用一般式的结论即可。
+
+\subsubsection{平行}
+
+两直线平行，当且仅当倾斜角相等且不重合。
+
+倾斜角相等 \(\Leftrightarrow k_1 = k_2 \Leftrightarrow - \dfrac{A_1}{B_1} =- \dfrac{A_2}{B_2} \Leftrightarrow A_1B_2 = A_2B_1\)
+两直线不重合 \(\Leftrightarrow m_1 \neq m_2 \Leftrightarrow C_1 \neq C_2\)
+
+\subsubsection{距离公式}
+
+\begin{formula}[两点间距离公式]
+    两点 \(P_1(x_1,y_1),P_2(x_2,y_2)\) 之间的距离 \(|P_1P_2|= \sqrt{(x_1 - x_2)^2 +(y_1 - y_2)^2}\)。
+\end{formula}
+
+这是显然的，因为 \(|P_1P_2|=|\vec{P_1P_2}|\)。
+
+\begin{formula}[点到直线的距离公式]
+    点 \(P(x_0,y_0)\) 到直线 \(l:Ax + By + C = 0\) 的距离 \(d = \dfrac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}} \)。
+\end{formula}
+
+\addproof{点到直线的距离公式}[解析及向量的证法]{b6b26502-6c57-4017-94ed-b5a4069b8724}{
+    \textbf{证明一（解析法）：}如右图，图中 \(PQ \perp l\)，点 \(P(x_0,y_0)\) 到直线 \(l\) 的距离即线段 \(PQ\) 的长度。%
+    \begin{wrapfigure}{r}{10em}
+        \centering
+        \includegraphics[width=10em]{image34.png}
+    \end{wrapfigure}%
+    设 \(A \neq ,B \neq 0\)，由 \(PQ \perp l\)，得 \(k_1k_2 =- 1\)，则 \(k_{PQ} = \dfrac{B}{A}\)。因此直线 \(PQ:y - y_0 = \dfrac{B}{A}(x - x_0)\)，即
+    \(Bx - Ay = Bx_0 - Ay_0\)。解方程组
+    \begin{gather*}
+        \begin{cases} Ax + By + C= 0\\ Bx - Ay = Bx_0 - Ay_0 \end{cases}\\
+        \Rightarrow Q\left(\dfrac{B^2x_0 - ABy_0 - AC}{A^2 + B^2},\dfrac{ - ABx_0 + A^2y_0 - BC}{A^2 + B^2}\right)\\
+    \end{gather*}
+    因此
+    \begin{align*}
+        |PQ| & = \sqrt{\left( \dfrac{B^2x_0 - ABy_0 - AC}{A^2 + B^2} - x_0 \right)^2 + \left(\dfrac{ - ABx_0 + A^2y_0 - BC}{A^2 + B^2} -y_0\right)^2}                           \\
+             & = \sqrt{\left( \dfrac{B^2x_0 - ABy_0 - AC - A^2x_0 - B^2x_0}{A^2 + B^2} \right)^2 + \left(\dfrac{ - ABx_0 + A^2y_0 - BC - A^2y_0 - B^2y_0}{A^2 + B^2} \right)^2} \\
+             & = \sqrt{\left( \dfrac{ - A^2x_0 - ABy_0 - AC}{A^2 + B^2} \right)^2 + \left(\dfrac{ - ABx_0 - B^2y_0 - BC}{A^2 + B^2} \right)^2}                                  \\
+             & = \sqrt{\dfrac{[ -A(Ax_0 + By_0 + C)]^2 + [ -B(Ax_0 + By_0 + C)]^2}{(A^2 + B^2)^2}}                                                                              \\
+             & = \sqrt{\dfrac{(A^2 + B^2)(Ax_0 + By_0 + C)^2}{(A^2 + B^2)^2}}                                                                                                   \\
+             & = \sqrt{\dfrac{(Ax_0 + By_0 + C)^2}{A^2 + B^2}} = \dfrac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}
+    \end{align*}
+
+    \textbf{证明二（向量法）：}设直线 \(l:Ax + By + C = 0\) 及其上一点 \(K(x_1,y_1)\)，直线外某一点 \(P(x_0,y_0)\) 到直线的距离为 \(|PQ|\)。直线 \(PQ\) 的方向向量即为直线 \(l\) 的法向量，即 \(\vec{n} =(A,B)\).
+    因为 \(\vec{PQ}\) 即为 \(\vec{PK}\) 在 \(\vec{n}\) 上的投影向量，所以
+    \(|PQ|=|\vec{PQ}|= \dfrac{|\vec{PK}\cdot \vec{n}|}{|\vec{n}|} = \dfrac{|(x_1 - x_0,y_1 - y_0)\cdot (A,B)|}{\sqrt{A^2 + B^2}} = \dfrac{|A(x_1 - x_0) + B(x_1 - x_0)|}{\sqrt{A^2 + B^2}} \)。
+    因为 \(K\) 在直线 \(l\) 上，所以 \(Ax_1 + By_1 + C = 0\) 即 \(Ax_1 + By_1 =- C\)。所以 \(|PQ|= \dfrac{|- C - Ax_0 - By_0|}{\sqrt{A^2 + B^2}} =\dfrac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}\) 。
+}%
+下面给出等面积（面积算两次）的证明方法。
 
 \begin{proof}
-    设直线 \(l\) 经过点 \(P_0(x_0,y_0),\vec{v} =(a,b)\) 是它的一个方向向量。再设 \(P(x,y)\) 是直线 \(l\) 上的任意一点，则由 \(\vec{P_0P} \parallel \vec{v}\)，可知存在唯一的实数 \(t\) ，使得：
-    \[
-        \vec{P_0P} = t\, \vec{v}\quad \implies (x - x_0,y - y_0) = t(a,b) \implies \begin{cases} x = x_0 + at\\y = y_0 + bt \end{cases}
-    \]
+    \begin{wrapfigure}{r}{10em}
+        \centering
+        \includegraphics[width=10em]{image35.png}
+    \end{wrapfigure}
+    如右图
 \end{proof}
 
-特别地，当 \(a^2 + b^2 = 1\)，即 \(\vec{v}\) 为单位方向向量，则 \(|\vec{P_0P}|=|t\, \vec{v}|=|t|\)。这就是说，直线 \(l\) 上任意一点 \(P\) 到直线上一点 \(P_0(x_0,y_0)\) 的距离即为该点所对应参变量 \(t\) 的绝对值。
+\begin{formula}[平行线间的距离公式]
+    两条平行直线 \(l_1,l_2\) 之间的距离为：
+    \[
+        d = \dfrac{|C_1 - C_2|}{\sqrt{A^2 + B^2}}
+    \]
+\end{formula}
+
+两条平行直线间的距离即为其中一条直线上的一点到另一条直线的距离。请尝试证明。%
+\addproof{平行线间的距离公式}{84c33843-81c2-43d8-a6b5-c66218e09b47}{
+    a
+}
 
 \chapter{排列组合}
 
@@ -1909,11 +1981,9 @@
 
 \appendix
 
-\twocolumn
 \chapter{完整证明及解答}
 \showproofs
 
-\onecolumn
 \chapter{B版中的阅读材料}
 
 本附录收录了人教版B版高中教材中的部分阅读材料，作为补充阅读之用，顺序大致与本书内容对应。\marginpar{\footnotesize 我们A版学生也是太悲催了}
