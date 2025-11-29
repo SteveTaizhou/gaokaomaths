@@ -2060,9 +2060,117 @@
 \addproof{例题~\ref{dc00b6d4-be51-4b88-9895-05bea6e4c943}}{be0327e6-da3b-4add-8920-6af4d63732ef}{
     取直线 \(A_1x + B_1y + C_1 = 0,A_2x + B_2y + C_2 = 0\) 的方向向量 \(\vec{v_1} =( - B_1,A_1),\vec{v_2} =( - B_2,A_2)\)，则
     \(\cos \theta = |\cos \langle\vec{v_1},\vec{v_2}\rangle|= \left|\dfrac{\vec{v_1}\cdot\vec{v_2}}{|\vec{v_1}| |\vec{v_2}|} \right|=\dfrac{|A_1A_2 + B_1B_2|}{\sqrt{A_1^2 + B_1^2}\cdot \sqrt{A_2^2 + B_2^2}}\)。
+    这个式子是齐次的，因此方向向量的选取不影响结论的导出，如果仍有疑虑可自行验证。
 }*
 
+\subsubsection{向量叉乘的三角形面积公式}
+
 \subsection{对称问题}
+
+开始前我们给出中点公式而不加证明：
+
+\begin{formula}[中点公式]
+    两点 \(P_1(x_1,y_1),P_2(x_2,y_2)\) 连线的中点坐标为 \[\left(\dfrac{x_1 + x_2}{2} ,\dfrac{y_1 + y_2}{2} \right)\]
+\end{formula}
+
+\subsubsection{点关于点对称}
+
+点 \(P(a,b)\) 关于点 \(Q(m,n)\) 的对称点为 \(P'\) ，则 \(P'(2m- a,2n - b)\)。
+
+\begin{proof}
+    设 \(P'(x,y)\) 。因为 \(P,P'\) 关于 \(Q\) 对称，所以 \(PP'\) 的中点为点 \(Q\) ，应用中点公式，有
+    \(\begin{cases} m = \dfrac{a + x}{2} \\ n =\dfrac{b + y}{2} \end{cases} \)，解得 \(x = 2m - a,y = 2n - b\)。
+\end{proof}
+
+\subsubsection{点关于坐标轴及原点对称}
+
+点 \(P(a,b)\)：
+\begin{itemize}
+    \item 关于 \(x\) 轴对称的点坐标为 \((a, - b)\)；
+    \item 关于 \(y\) 轴对称的点坐标为 \(( - a,b)\)；
+    \item 关于原点对称的点坐标为 \(( - a, - b)\)。
+\end{itemize}
+
+\subsubsection{点关于直线对称}
+
+核心思路：垂直平分。
+
+给定直线 \(l:Ax + By + C = 0\) 与直线 \(l\) 外一点 \(P(x_0,y_0)\) ，下面推导点 \(P\) 关于直线 \(l\) 的对称点 \(P'\) 的坐标。
+
+先设点 \(P'(x,y)\) ，并连 \(PP'\) ，由轴对称的性质， \(l\) \textit{垂直平分} \(PP'\) 。这里有两个未知数，需要两个方程。
+
+\textit{垂直}即 \(PP'\perp l\)，故 \(\dfrac{y - y_0}{x - x_0} \cdot \dfrac{A}{ - B} =- 1\)，化简得 \(Bx - Ay +(Ay_0 - Bx_0) = 0\)。这里我们没有考虑斜率不存在的情况，因为分母稍后就要乘到另一侧，不影响结果。
+
+\textit{平分}即 \(PP'\) 中点在 \(l\) 上，故 \(A\cdot \dfrac{x + x_0}{2} + B\cdot \dfrac{y + y_0}{2} + C = 0 \)，化简得 \(Ax + By +(Ax_0 + By_0 + 2C)= 0\)。
+
+这里我们得到了一个二元一次方程组\(\begin{cases} Bx - Ay +(Ay_0 - Bx_0) = 0\\Ax + By +(Ax_0 + By_0 + 2C)= 0 \end{cases} \)，通过加减消元法可以直接得到解，请读者自行尝试。这里我们另辟蹊径。
+
+我们知道，若设 \(l\) 的一个法向量为 \(\vec{n} =(A,B)\) ，那么 \(\vec{n}\parallel \vec{PP'}\)，也就是说 \(\dfrac{x - x_0}{A} = \dfrac{y - y_0}{B} \)， 我们令该式
+\(=t\ne 0\) ， 那么 \(x = At + x_0,\, y = Bt + y_0\)，代入\textit{平分}条件 \(Ax + By +
+(Ax_0+By_0 + 2C) = 0\) 得到：
+\begin{align*}
+    0 & =A(x_0 + At) + B(y_0 + Bt) +(Ax_0 + By_0 + 2C) \\
+      & = (A^2 + B^2)t +2Ax_0 + 2By_0 + 2C
+\end{align*}
+
+解得 \(t =- \dfrac{2(Ax_0 + By_0 + C)}{A^2 + B^2} \)，代入 \(x = At + x_0,\, y = Bt + y_0\) 得到
+\(\begin{cases} x = x_0 - \dfrac{2A(Ax_0+ By_0 + C)}{A^2 + B^2} \\y = y_0 - \dfrac{2B(Ax_0 + By_0 + C)}{A^2 + B^2}  \end{cases} \)，
+这就是说，点 \(P\) 关于直线 \(l\) 的对称点 \(P'\) 的坐标为
+\[
+    \boxed{P'\left( x_0 - 2A\cdot \dfrac{Ax_0 + By_0 + C}{A^2 + B^2} ,\, y_0 - 2B\cdot \dfrac{Ax_0 + By_0 + C}{A^2 + B^2}  \right)}
+\]
+
+为便于记忆，令 \(* = \dfrac{Ax_0 + By_0 + C}{A^2 + B^2} \)，则 \(P'(x_0 - 2A*,y_0 - 2B*)\)。
+
+这里我们通过引入第三变量 \(t\) 来辅助消元，主要是因为\textit{垂直}条件 \(Bx - Ay +(Ay_0 - Bx_0) = 0\) 即 \(A(x- x_0) = B(y - y_0)\) 具有高度的对称性，而 \(t\) 是关联两个对称的量的关键桥梁。
+\marginpar{这里的对称性与几何意义的对称并无关系，这里的对称或称“同构”，是指对两个量（或式等）作同样的操作，此时如果继续进行同样的操作，或许会有意想不到的结果。}
+解方程组的同学，你算对了吗？
+
+值得一提的是，上述方法同样还可以用来求解过点 \(P\) 与 \(l\) 垂直的直线的垂足，即若 \(PP'\perp l\) 于点 \(H\) ，则其坐标为
+\[H\left( x_0 - A\cdot \dfrac{Ax_0 + By_0 + C}{A^2 + B^2} ,\, y_0 - B\cdot \dfrac{Ax_0 + By_0 + C}{A^2 + B^2} \right)\]
+
+若已知 \(l\) 的斜率为 \(1\) 或 \( - 1\)，那么 \(\begin{cases} Ax_0 + By + C = 0\\Ax + By_0 + C = 0 \end{cases} \)，也就是：
+
+\begin{itemize}
+    \item 若 \(l:x + y = m\) ，则 \(P'(m - y_0,m - x_0)\)；
+    \item 若 \(l:x - y = m\) ，则 \(P'(m + y_0,x_0 - m)\)。
+\end{itemize}
+
+这也就是你分别把 \(x_0,y_0\) 代入直线方程得到 \(x,y\) 的值所组成的坐标。
+
+\subsubsection{直线关于点对称}
+
+核心思路：
+
+\begin{itemize}
+    \item 定点为中点，相关点法求轨迹（将要使用的）；
+    \item 等距离且平行。
+\end{itemize}
+
+给定直线 \(l_1:Ax + By + C\) 与点 \(Q(x_0,y_0)\)，下面推导 \(l_1\) 关于 \(Q\) 对称的直线 \(l_2\) 的方程。
+
+显然，任取直线 \(l_2\) 上一点 \(P(x,y)\) ，那么点 \(P\) 关于点 \(Q\) 的对称点 \(P'(2x_0 -x, 2y_0 - y)\) 必然在 \(l_1\) 上。也就是：
+\[
+    l_2:A(2x_0 - x)+ B(2y_0- y) + C = 0
+\]
+
+记忆上式即可，展开立得 \(l_2:Ax + By - 2Ax_0-20 - By_0 - C = 0\)。
+
+\subsubsection{直线关于直线对称}
+
+直线关于直线对称往往比较困难。
+
+给定直线 \(l_1:A_1x + B_1y + C_1 = 0,l_:A_0x + B_0y + C_0 = 0\)，求直线 \(l_1\) 关于直线 \(l\) 的对称直线 \(l_2:A_2x + B_2y + C_2 = 0\) 。
+
+常规解法包括但不限于：
+
+\begin{itemize}
+    \item 在 \(l_1\) 上任取两个点，分别关于直线 \(l\) 对称，利用两点式求解；
+    \item 在 \(l\) 上取两个点，设 \(l_2\) ，两点到两直线的距离相等联立求解；
+    \item 求 \(l_1,l\) 的交点 \(P\) ，设过 \(P\) 的点斜式直线 \(l_2\)  ，在 \(l\) 上任取一点到两直线的距离相等联立求解。
+\end{itemize}
+
+% https://zhuanlan.zhihu.com/p/444405771
 
 \chapter{排列组合}
 
